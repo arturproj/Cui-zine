@@ -10,8 +10,15 @@ p{
     #hidden-col {
         display: none;
     }
+    main{
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
 }
-
+main{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 ::-webkit-scrollbar {
     width: 8px;
 }
