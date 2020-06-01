@@ -1,0 +1,13 @@
+
+@import url("bootstrap/bootstrap.css");
+@import url("book-kit/book-kit.css");
+
+p{
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 992px) {
+    #hidden-col {
+        display: none;
+    }
+  }
