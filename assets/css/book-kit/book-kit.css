@@ -32,11 +32,11 @@ body{
 * NavBar
 */
 .navbar{
-    position: absolute;
     width: 100%;
     border-bottom: solid #808080;
     z-index: 50;
     text-transform: capitalize;
+    background-color: #000;
 }
 .navbar-brand{
     font-family: Lemonada_Regular;
@@ -67,7 +67,19 @@ body{
     color: #fff;
     background-color: #000000ad;
 }
-.main{
+#header-logo{
+    animation-name: logo_animate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo_animate {
+    0% {transform: rotateY(0deg)}
+    25% {transform: rotateY(180deg)}
+    50% {transform: rotateY(360deg)}
+    75% {transform: rotateY(180deg)}
+    100% {transform: rotateY(0deg)}
+}
+main{
     background-color: #fff;
 }
 .title{
