@@ -1,0 +1,13 @@
+  root
+    ⊢ assets/
+        ⊢---- css/ 
+                ⊢---- bootstrap/ 
+                        ⊢---- book-kit/ 
+                ⊢---- book-kit/ 
+        ⊢---- fonts/ 
+        ⊢---- img/
+        ⊢---- js/
+
+    ⊢ index.html 
+
+    ⊢ sitemap.txt
