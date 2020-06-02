@@ -11,12 +11,12 @@
     <meta name="subject" content="your website's subject">
     <meta name="copyright" content="Artur Dev 2020">
     <meta name="language" content="fr">
-    <meta name="robots" content="index">
+    <meta name="robots" content="index,follow">
     <meta name="Classification" content="Blog">
     <meta name="author" content="Artur Dev, artur@fr4m3studio.com">
     <meta name="designer" content="Artur Dev">
     <meta name="reply-to" content="artur@fr4m3studio.com">
-    <meta name="pagename" content="Cui'zine Blog">
+    <meta name="pagename" content="Cui'zine Accueil">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="imagetoolbar" content="yes">
@@ -24,7 +24,7 @@
     <!-- Template compilated CSS -->
     <script src="https://kit.fontawesome.com/170567106c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
-    <title>Cui'zine</title>
+    <title>Cui'zine Accueil</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
@@ -38,13 +38,13 @@
                 <a class="nav-link" href="#">accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">equipe</a>
+                <a class="nav-link" href="equipe/index.html">equipe</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
+                <a class="nav-link" href="blog/index.html">blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" href="contact/index.html">contact</a>
             </li>
             </ul>
         </div>
@@ -105,7 +105,7 @@
                             <li class="footer-list">
                                 <form class="form-form-group">
                                     <div class="form-group mb-2">
-                                      <input type="text" class="form-control" id="rechatche" placeholder="Recharche..." required>
+                                      <input type="text" class="form-control" id="rechatche" placeholder="Recharche..." autocomplete="email" required>
                                     </div>                           
                                     <button type="submit" class="btn btn-outline-dark mb-2 w-100">Ok</button>
                                   </form>
@@ -114,7 +114,7 @@
                             <li class="footer-list">
                                 <form class="form-form-group">
                                     <div class="form-group mb-2">
-                                      <input type="text" class="form-control" id="newletter" placeholder="Email..." required>
+                                      <input type="text" class="form-control" id="newletter" placeholder="Email..." autocomplete="email" required>
                                     </div>                           
                                     <button type="submit" class="btn btn-outline-dark mb-2 w-100">S'inscrire</button>
                                 </form>
@@ -158,7 +158,7 @@
                     <li class="footer-list">
                         <form class="form-inline">
                             <div class="form-group mb-2">
-                              <input type="text" class="form-control" id="newletter_static" placeholder="Email..." required>
+                              <input type="text" class="form-control" id="newletter_static" placeholder="Email..." autocomplete="email" required>
                             </div>                           
                             <button type="submit" class="btn btn-outline-light mb-2">S'inscrire</button>
                           </form>
