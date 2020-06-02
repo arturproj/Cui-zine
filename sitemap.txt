@@ -1,13 +1,54 @@
-  root
-    ⊢ assets/
-        ⊢---- css/ 
-                ⊢---- bootstrap/ 
-                        ⊢---- book-kit/ 
-                ⊢---- book-kit/ 
-        ⊢---- fonts/ 
-        ⊢---- img/
-        ⊢---- js/
-
-    ⊢ index.html 
-
-    ⊢ sitemap.txt
+╫╫ root:
+    ┣╍╍ ./assets/
+    ┃       ┣╍╍ ./stylesheet/ 
+    ┃       ┃       ┣╍╍ ./bootstrap/ 
+    ┃       ┃       ┃       ┣╍╍ bootstrap.css 
+    ┃       ┃       ┃       ┣╍╍ bootstrap.min.css 
+    ┃       ┃       ┃       ┗╍╍ ***
+    ┃       ┃       ┃   
+    ┃       ┃       ┣╍╍ ./book-kit/ 
+    ┃       ┃       ┃       ┗╍╍ book-kit.css
+    ┃       ┃       ┃               
+    ┃       ┃       ┣╍╍ index.css
+    ┃       ┃       ┣╍╍ equipe.css
+    ┃       ┃       ┣╍╍ blog.css
+    ┃       ┃       ┗╍╍ contact.css    
+    ┃       ┃   
+    ┃       ┣╍╍ ./javascript/ 
+    ┃       ┃       ┣╍╍ ./core/ 
+    ┃       ┃       ┃       ┣╍╍ bootstrap.js 
+    ┃       ┃       ┃       ┣╍╍ bootstrap.js.map
+    ┃       ┃       ┃       ┣╍╍ bootstrap.min.js 
+    ┃       ┃       ┃       ┣╍╍ bootstrap.min.js.map
+    ┃       ┃       ┃       ┣╍╍ jquery.min.js 
+    ┃       ┃       ┃       ┗╍╍ popper.min.js 
+    ┃       ┃       ┃       
+    ┃       ┃       ┣╍╍ ./plugin/ 
+    ┃       ┃       ┃       ┣╍╍ bootstrap-notify.js 
+    ┃       ┃       ┃       ┣╍╍ bootstrap.bundle.js
+    ┃       ┃       ┃       ┣╍╍ bootstrap.bundle.js.map
+    ┃       ┃       ┃       ┣╍╍ bootstrap.bundle.min.js
+    ┃       ┃       ┃       ┣╍╍ bootstrap.bundle.min.js.map
+    ┃       ┃       ┃       ┣╍╍ chartjs.min.js
+    ┃       ┃       ┃       ┗╍╍ perfect-scrollbar.jquery.min.js
+    ┃       ┃       ┃       
+    ┃       ┃       ┣╍╍ index.js
+    ┃       ┃       ┣╍╍ equipe.js
+    ┃       ┃       ┣╍╍ blog.js
+    ┃       ┃       ┗╍╍ contact.js
+    ┃       ┃
+    ┃       ┣╍╍ ./fonts/
+    ┃       ┗╍╍ ./img/
+    ┃
+    ┣╍╍ index.html 
+    ┃
+    ┣╍╍ ./equipe/
+    ┃       ┗╍╍ index.html 
+    ┃
+    ┣╍╍ ./blog/
+    ┃       ┗╍╍ index.html
+    ┃
+    ┣╍╍ ./contact/
+    ┃       ┗╍╍ index.html
+    ┃
+    ┗╍╍ sitemap.txt
