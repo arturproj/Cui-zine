@@ -1,8 +1,11 @@
 /**
- * Test Import File
+ * Include external file js
  */
-function Fmodule() {
-    console.log('import moduls successifuly.');
+function dynamicallyLoadScript(url) {
+    var script = document.createElement("script");  // create a script DOM node
+    script.src = url;  // set its src to the provided URL
+
+    document.body.appendChild(script);  // add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
 }
 /**
  * Menegers Cookies
@@ -29,3 +32,16 @@ function getCookie(name) {
 function deleteCookie(name) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 } 
+/**
+ * Document on ready function
+ * 
+ */
+$(function () {
+    if($(window).scrollTop() > 150){
+        $(".navbar").toggleClass('bg-transparent');
+    }
+    $(document).scroll(function () {
+        var $nav = $(".navbar");
+            $nav.toggleClass('bg-transparent', $(window).scrollTop() < 150 ); 
+    });
+});
