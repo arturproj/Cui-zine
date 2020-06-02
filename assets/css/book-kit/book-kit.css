@@ -34,7 +34,6 @@ body{
 .navbar{
     width: 100%;
     border-bottom: solid #808080;
-    z-index: 50;
     text-transform: capitalize;
     background-color: #000;
 }
