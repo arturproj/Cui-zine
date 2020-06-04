@@ -1,23 +1,8 @@
 @font-face {
-    font-family: Lemonada_Bold;         src: url(./../../fonts/Lemonada-Bold.ttf);
+    font-family: Courgette;             src: url(./../../fonts/Courgette/Courgette-Regular.ttf);
 }
 @font-face {
-    font-family: Lemonada_Light;        src: url(./../../fonts/Lemonada-Light.ttf);
-}
-@font-face {
-    font-family: Lemonada_Medium;       src: url(./../../fonts/Lemonada-Medium.ttf);
-}
-@font-face {
-    font-family: Lemonada_Regular;      src: url(./../../fonts/Lemonada-Regular.ttf);
-}
-@font-face {
-    font-family: Lemonada_SemiBold;     src: url(./../../fonts/Lemonada-SemiBold.ttf);
-}
-@font-face {
-    font-family: Monserrat_Regular;     src: url(./../../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: Monserrat_Light;       src: url(./../../fonts/Montserrat-ExtraLight.ttf);
+    font-family: Oswald;                src: url(./../../fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 html{
     margin: 0;
@@ -33,12 +18,12 @@ body{
 */
 .navbar{
     width: 100%;
-    border-bottom: solid #808080;
+    border-bottom: 1px solid #ffffffaf;
     text-transform: capitalize;
     background-color: #000;
 }
 .navbar-brand{
-    font-family: Lemonada_Regular;
+    font-family: Courgette;
     font-style: italic;
 }
 .navbar-dark .navbar-toggler {
@@ -61,10 +46,13 @@ body{
 .header-content{
     width: 100%;
     height: 100%;
-    font-family: Lemonada_Regular;
+    font-family: Courgette;
     font-style: italic;
     color: #fff;
     background-color: #000000ad;
+}
+header h1{
+    font-size: 3rem;
 }
 #header-logo{
     animation-name: logo_animate;
@@ -85,18 +73,15 @@ main{
     text-transform: capitalize;
 }
 
-h3 {
-    font-family: Monserrat_Regular;
-    text-transform: capitalize;
-    font-weight: bold;
+h1,h2,h3,h4,h5,h6{
+    font-family: Courgette;
+}
+p{
+    font-family: Oswald;
 }
 
-h4,h5,p {
-    font-family: Monserrat_Light;
-}
-h4,h5,h6{
-    font-family: Lemonada_Regular;
-    font-style: italic;
+footer h1,footer h2,footer h3,footer h4,footer h5,footer h6{
+    color: #fff;
 }
 
 .footer-list{
@@ -160,7 +145,7 @@ h4,h5,h6{
     #hidden-col {
         display: none;
     }
-    main{
+    main,footer{
         padding-left: 0rem !important;
         padding-right: 0rem !important;
     }
@@ -171,7 +156,21 @@ h4,h5,h6{
         font-size: 1.5rem;
     }
 }
-main{
-    padding-left: 3rem;
-    padding-right: 3rem;
+main,footer{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.foo-art,.foo-art:hover{
+    font-family: Oswald;
+    color: #000;
+}
+a.equipe-link{
+    color: #212529 !important;
+}
+a.article{
+    color: #000 !important;
+}
+a.article:hover{
+    text-decoration: none;
 }

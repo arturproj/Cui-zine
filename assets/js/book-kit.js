@@ -31,12 +31,39 @@ function getCookie(name) {
 }
 function deleteCookie(name) {
     document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-} 
+}
+/**
+ * Parce param url
+ */
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
+function readTextFile(id,url) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", url, true);
+    rawFile.onreadystatechange = function() {
+      if (rawFile.readyState === 4) {
+        var allText = rawFile.responseText;
+        document.getElementById(id).innerHTML = allText;
+      }
+    }
+    rawFile.send();
+  }
 /**
  * Document on ready function
- * 
+ * S
  */
-$(function () {
+$(document).ready(function () {       
+    $.get( "/navbar/index.html", function( data ) {
+        $( "#rep_nav" ).html( data );
+    }); 
+    $.get( "/footer/index.html", function( data ) {
+        $( "#rep_foo" ).html( data );
+    });   
     if($(window).scrollTop() > 150){
         $(".navbar").toggleClass('bg-transparent');
     }

@@ -27,28 +27,7 @@
     <title>Cui'zine Equipe &#128526;</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
-        <a class="navbar-brand" href="#">cui'zine</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="./../index.html">accueil</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">equipe<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./../blog/index.html">blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./../contact/index.html">contact</a>
-            </li>
-            </ul>
-        </div>
-    </nav>
+    <nav id="rep_nav" class="navbar fixed-top navbar-expand-sm navbar-dark bg-transparent"></nav>
     <header class="header-page">
         <div class="header-content d-flex justify-content-center align-items-center text-center text-capitalize">
             <div class="d-flex flex-column">                
@@ -56,69 +35,81 @@
                 <h2 class="equipe-header">un pour tous et tous pour un</h2>                
             </div>
         </div>
-    </header>
+    </header><!-- .//header-page -->
     <main class="main py-4">
         <section>
             <div class="row mx-0">
                 <div class="col-lg-9 col-md-12 col-sm-12">
-                    <div class="row mx-0 row-cols-2 row-cols-md-3">
+                    <div class="row mx-0 row-cols-1 row-cols-sm-2 row-cols-md-3">
                         <div class="col-sm-6 mb-4 p-2">
-                            <div class="card">
-                                <img src="./../assets/img/team/tony.jpg" class="card-img-top rounded-circle" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">tony</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Rédacteur en chef</h6>
+                            <a class="equipe-link" href="bio.html?tech=tony&prof=rédacteur en chef">
+                                <div class="card">
+                                    <img src="./../assets/img/team/tony.jpg" class="card-img-top rounded-circle" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">tony</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Rédacteur en chef</h6>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-6 mb-4 p-2">
-                            <div class="card">
-                                <img src="./../assets/img/team/clementine.jpg" class="card-img-top rounded-circle" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">clémentine</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">journaliste culinaire</h6>
+                            <a class="equipe-link" href="bio.html?tech=clementine&prof=journaliste culinaire">
+                                <div class="card">
+                                    <img src="./../assets/img/team/clementine.jpg" class="card-img-top rounded-circle" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">clémentine</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">journaliste culinaire</h6>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-xs-6  mb-4 p-2">
-                            <div class="card">
-                                <img src="./../assets/img/team/antoine.jpg" class="card-img-top rounded-circle" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">antoine</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Gouteur professionnel</h6>
+                            <a class="equipe-link" href="bio.html?tech=antoine&prof=gouteur professionnel">
+                                <div class="card">
+                                    <img src="./../assets/img/team/antoine.jpg" class="card-img-top rounded-circle" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">antoine</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Gouteur professionnel</h6>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-6 mb-4 p-2">
-                            <div class="card">
-                                <img src="./../assets/img/team/tony.jpg" class="card-img-top rounded-circle" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">tony</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Rédacteur en chef</h6>
+                            <a class="equipe-link" href="bio.html?tech=tony&prof=rédacteur en chef">
+                                <div class="card">
+                                    <img src="./../assets/img/team/tony.jpg" class="card-img-top rounded-circle" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">tony</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Rédacteur en chef</h6>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-sm-6 mb-4 p-2">
-                            <div class="card">
-                                <img src="./../assets/img/team/clementine.jpg" class="card-img-top rounded-circle" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">clémentine</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">journaliste culinaire</h6>
+                            <a class="equipe-link" href="bio.html?tech=clementine&prof=journaliste culinaire">
+                                <div class="card">
+                                    <img src="./../assets/img/team/clementine.jpg" class="card-img-top rounded-circle" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">clémentine</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">journaliste culinaire</h6>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-xs-6  mb-4 p-2">
-                            <div class="card">
-                                <img src="./../assets/img/team/antoine.jpg" class="card-img-top rounded-circle" alt="...">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">antoine</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Gouteur professionnel</h6>
+                            <a class="equipe-link" href="bio.html?tech=antoine&prof=gouteur professionnel">
+                                <div class="card">
+                                    <img src="./../assets/img/team/antoine.jpg" class="card-img-top rounded-circle" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">antoine</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Gouteur professionnel</h6>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div><!-- .//end col-sm-8 -->
-                <div id="hidden-col" class="col-sm-3">
+                <div class="d-none d-lg-block col-lg-3">
                     <ul class="list-group w-100">
                         <li class="footer-list"><label for="rechatche"><h6 class="text-dark text-capitalize">recherche</h6></label></li>
                         <li class="footer-list">
@@ -151,54 +142,12 @@
                 </div><!-- .//end col-sm-4 -->
             </div><!-- .//end row -->
         </section><!-- .//end section 1 -->
-    </main>
-    <footer class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="row px-4 py-5 w-100">
-            <div class="col-lg-4 col-sm-6 px-3 pb-3">
-                <h4 class="navbar-brand">catégories</h4>
-                <ul class="list-group w-100">
-                    <li class="footer-list"><a href="#revues">revues</a></li>
-                    <li class="footer-list"><a href="#recettes">recettes</a></li>
-                    <li class="footer-list"><a href="#decouvertes">découvertes</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-sm-6 px-3 pb-3">
-                <h4 class="navbar-brand">Archives</h4>
-                <ul class="list-group w-100">
-                    <li class="footer-list"><a href="#2019">2019</a></li>
-                    <li class="footer-list"><a href="#2018">2018</a></li>
-                    <li class="footer-list"><a href="#2017">2017</a></li>
-                </ul>           
-            </div>
-            <div class="col-lg-4 col-sm-12 px-3 pb-3">
-                <ul class="list-group w-100">
-                    <li class="footer-list"><label for="newletter_static"><h4 class="navbar-brand">newletter</h4></label></li>
-                    <li class="footer-list">
-                        <form class="form-inline">
-                            <div class="form-group mb-2">
-                              <input type="text" class="form-control" id="newletter_static" placeholder="Email..." autocomplete="email" required>
-                            </div>                           
-                            <button type="submit" class="btn btn-outline-light mb-2">S'inscrire</button>
-                          </form>
-                    </li>
-                    <li class="footer-list"><h6 class="text-white" >partager</h6></li>
-                    <li class="footer-list">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-social"><i class="fab fa-facebook-square fa-2x"></i></button>
-                            <button type="button" class="btn btn-social"><i class="fab fa-instagram fa-2x"></i></button>
-                            <button type="button" class="btn btn-social"><i class="fab fa-youtube fa-2x"></i></button>
-                            <button type="button" class="btn btn-social"><i class="fab fa-twitter fa-2x"></i></button>
-                        </div>
-                    </li>
-                </ul> 
-            </div>
-        </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./../assets/js/core/jquery.min.js"></script>
+    </main><!-- .//contener page -->
+    <footer class="containe bg-black" id="rep_foo"></footer>
+    <script src="./../assets/js/core/jquery.js"></script>
     <script src="./../assets/js/core/popper.min.js"></script>
     <script src="./../assets/js/core/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/170567106c.js" crossorigin="anonymous"></script>
     <script src="./../assets/js/book-kit.js" ></script>
     <script src="./../assets/js/index.js" ></script>
 </body>
