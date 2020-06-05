@@ -1,41 +1,10 @@
 
-@import url("bootstrap/bootstrap.css");
 @import url("book-kit/book-kit.css");
 
-.header-page{
-    width: 100%;
-    height: 70vh;
-    background-image: url('./../img/header.jpg');
-    background-color: #000;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+header{
+    background-image: url('./../../assets/img/header.jpg');
+    height: 65vh;
 }
-.card{
+main .card{
     border: none;
-}
-.card-body{
-    padding-left: 0;
-    padding-right: 0;
-}
-h6.card-subtitle {
-    font-family: Oswald !important;
-    text-transform: capitalize !important;
-    font-style: normal !important;
-}
-h5.card-title ,h6.card-subtitle {
-    text-transform: capitalize;
-}
-
-p.intro:first-letter {
-    top: -20px;
-    color: gray;
-    font-size: 3.5em;  
-    float: left;  
-}
-p.intro{
-    color: initial; 
-}
-p.intro,p.prop{
-    font-weight: initial;
 }
