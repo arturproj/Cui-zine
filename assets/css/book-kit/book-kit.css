@@ -15,10 +15,7 @@
     margin-left: 1rem;
     margin-right: 1rem;    
 }
-ul.navbar-nav{
-    padding: 0 10px;
-    background-color: rgba(0, 0, 0, 0.68);
-}
+
 header,.navbar-brand,.header-content,label{
     font-family: Courgette;
     font-style: italic;
@@ -34,7 +31,7 @@ header,.navbar-brand,.header-content,label{
 .navbar-bg-opacity{
     background-color: rgba(0, 0, 0, 0.68);
 }
-.navbar-bg-opacity ul.navbar-nav{
+.navbar-bg-opacity ul.navbar-nav,ul.navbar-nav{
     background-color: transparent;
 }
 header{
@@ -104,10 +101,14 @@ a.article{
 a:hover.article p {
     text-decoration: none;
 }
-@media only screen and (min-width: 400px) {
-   
+@media only screen and (max-width: 575px) {
+    ul.navbar-nav{
+        padding: 0 10px;
+        background-color: rgba(0, 0, 0, 0.68);
+    }
 }
 @media only screen and (min-width: 600px) {
+
     footer,main .card-body{
         padding-left: 1rem !important;
         padding-right: 1rem !important;
