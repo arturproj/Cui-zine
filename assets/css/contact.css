@@ -1,0 +1,10 @@
+
+@import url("book-kit/book-kit.css");
+
+header{
+    background-image: url('./../../assets/img/header.jpg');
+    height: calc(100vh - 140px);
+}
+main .card{
+    border: none;
+}

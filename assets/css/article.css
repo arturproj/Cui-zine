@@ -2,13 +2,6 @@
 @import url("bootstrap/bootstrap.css");
 @import url("book-kit/book-kit.css");
 
-p{
-    font-weight: bolder;
-}
-p.prop{
-    font-weight: initial;
-}
-
 .header-page{
     width: 100%;
     height: 70vh;
@@ -41,7 +34,6 @@ p.intro:first-letter {
     float: left;  
 }
 p.intro{
-    top: 10px;
     color: initial; 
 }
 p.intro,p.prop{

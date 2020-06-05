@@ -52,23 +52,18 @@ function readTextFile(id,url) {
       }
     }
     rawFile.send();
-  }
-/**
- * Document on ready function
- * S
- */
-$(document).ready(function () {       
-    $.get( "/navbar/index.html", function( data ) {
-        $( "#rep_nav" ).html( data );
-    }); 
-    $.get( "/footer/index.html", function( data ) {
-        $( "#rep_foo" ).html( data );
-    });   
-    if($(window).scrollTop() > 150){
-        $(".navbar").toggleClass('bg-transparent');
+}
+function toggleNav(){
+    if ( $(window).scrollTop() > 200 ) {
+        return $(".navbar").addClass( "navbar-bg-opacity" );
+    } else {
+        return $(".navbar").removeClass( "navbar-bg-opacity" );
     }
+}
+$(document).ready(function() {
+    
     $(document).scroll(function () {
-        var $nav = $(".navbar");
-            $nav.toggleClass('bg-transparent', $(window).scrollTop() < 150 ); 
+       return toggleNav();
     });
+    return toggleNav();
 });
